@@ -1,4 +1,13 @@
 Resources:
+  MyEC2Instance:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: "ami-0cf10cdf9fcd62d37"
+      InstanceType: "t2.micro"
+      Tags:
+        - Key: "EC2-lounis"
+          Value: "EC2InstanceMT4Lounis"
+
   S3Bucket:
     Type: "AWS::S3::Bucket"
     Properties: {}
